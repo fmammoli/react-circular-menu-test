@@ -14,6 +14,7 @@ body {
   --move-animation-duration: 1s;
   --ball-size: 100px;
   --bal-smaller-size: 80px;
+  --tiny-ball-size: 50px;
 }
 #root {
   height: 100%;
@@ -79,7 +80,7 @@ body {
   display: grid;
   grid-area: 1 / 1 / 2 / 2;
   transition: var(--move-animation-duration) ease;
-  z-index: 50;
+  z-index: 2;
 }
 .menu-item .sub-menu-item {
   z-index: 10;
@@ -101,6 +102,14 @@ body {
   height: var(--bal-smaller-size);
   width: var(--bal-smaller-size);
 }
+.tiny-ball {
+  height: var(--tiny-ball-size);
+  width: var(--tiny-ball-size);
+}
+
+.tiny-line {
+  width: var(--tiny-ball-size);
+}
 #root-item {
   z-index: 100;
 }
@@ -120,9 +129,25 @@ body {
   background-color: lightcoral;
   background-image: url(PikPng.com_real-fish-png_2506996.png);
   background-size: cover;
+  z-index: 30;
+}
+.first-level {
+  z-index: 100;
+}
+.second-level {
+  z-index: 50;
+}
+.third-level {
+  z-index: 25;
+}
+.root-item-background {
+  background-color: cornflowerblue;
 }
 .sub-item-background {
   background-color: aquamarine;
+}
+.sub-sub-item-background {
+  background-color: rgb(246, 224, 255);
 }
 #item-one-one {
   background-color: lightseagreen;
