@@ -1,5 +1,5 @@
-import "./App.css";
 import React, { useEffect } from "react";
+import "./CircularMenu.css";
 
 function SubSubMenuItem({
   id,
@@ -11,6 +11,7 @@ function SubSubMenuItem({
   middleIsActive,
   parentIsActive,
   secondPosition,
+  children,
 }) {
   function handleClick(e) {
     e.preventDefault();
@@ -83,7 +84,7 @@ function SubSubMenuItem({
                   }}
                 >
                   <div className="menu-item-label sub-menu-item-label">
-                    {title}
+                    {children}
                   </div>
                 </div>
               </div>
@@ -118,6 +119,7 @@ function SubMenuItem({
   hasSubItems,
   openedThirdMenus,
   setOpenedThirdMenus,
+  children,
 }) {
   useEffect(() => {
     if (isActive && parentIsActive === false) {
@@ -179,7 +181,9 @@ function SubMenuItem({
                 transform: `rotate(-${position.rotation + rotation}deg)`,
               }}
             >
-              <div className="menu-item-label sub-menu-item-label">{title}</div>
+              <div className="menu-item-label sub-menu-item-label">
+                {children}
+              </div>
             </div>
           </div>
           <div className="center-grid line-rotation-container">
@@ -208,6 +212,7 @@ function CircularMenuItem({
   hasSubSubItems,
   setOpenedSecondMenus,
   openedSecondMenus,
+  link,
   children,
 }) {
   useEffect(() => {
@@ -249,7 +254,7 @@ function CircularMenuItem({
             className="menu-item-label"
             // style={{ transform: `rotate(-${rotation}deg)` }}
           >
-            {title}
+            {children}
           </div>
         </div>
       </div>
@@ -286,7 +291,7 @@ function CircularMenu(props) {
   }
 
   return (
-    <nav className="menu-nav float-animation">
+    <nav className="menu-nav ">
       <div className="menu">
         {props.children}
         <CircularMenuRootItem

@@ -1,0 +1,167 @@
+:root {
+  --move-animation-duration: 1s;
+  --ball-size: 100px;
+  --bal-smaller-size: 80px;
+  --tiny-ball-size: 50px;
+}
+
+.title h1 {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+.center-grid {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.menu-nav {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.menu-nav .menu {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr;
+  align-self: center;
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.menu-item {
+  grid-area: 1 / 1 / 2 / 2;
+  list-style: none;
+  text-align: center;
+}
+
+.menu-item-label {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  color: black;
+  font-weight: bold;
+}
+
+.sub-menu-item-label {
+  font-weight: normal;
+}
+.menu-item-label a {
+  color: black;
+  text-decoration: none;
+}
+.menu-item-label a:hover {
+  color: lightgrey;
+}
+.menu-item .circular-item {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2;
+  transition: var(--move-animation-duration) ease;
+  z-index: 2;
+}
+.menu-item .sub-menu-item {
+  z-index: 10;
+}
+.line {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2;
+  width: var(--ball-size);
+  height: 2px;
+  background-color: black;
+  transition: var(--move-animation-duration) ease;
+  transform-origin: left;
+  z-index: 0;
+}
+.smaller-line {
+  width: var(--bal-smaller-size);
+}
+.smaller-ball {
+  height: var(--bal-smaller-size);
+  width: var(--bal-smaller-size);
+}
+.tiny-ball {
+  height: var(--tiny-ball-size);
+  width: var(--tiny-ball-size);
+}
+
+.tiny-line {
+  width: var(--tiny-ball-size);
+}
+#root-item {
+  z-index: 100;
+}
+
+.position-container {
+  transition: var(--move-animation-duration) ease;
+}
+.rotation-container {
+  transition-duration: 0s;
+}
+
+.background-container {
+  border: solid 0px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: lightcoral;
+  background-image: url(PikPng.com_real-fish-png_2506996.png);
+  background-size: cover;
+  z-index: 30;
+}
+.first-level {
+  z-index: 100;
+}
+.second-level {
+  z-index: 50;
+}
+.third-level {
+  z-index: 25;
+}
+.root-item-background {
+  background-color: cornflowerblue;
+}
+.sub-item-background {
+  background-color: aquamarine;
+}
+.sub-sub-item-background {
+  background-color: rgb(246, 224, 255);
+}
+#item-one-one {
+  background-color: lightseagreen;
+}
+
+#item-three,
+#item-one {
+  background-image: url(PikPng.com_real-fish-png_2506996.png);
+  background-size: cover;
+}
+
+#item-one-one {
+  background-image: url(PikPng.com_real-fish-png_2506996.png);
+  background-size: cover;
+}
+
+.float-animation {
+  animation: floatY 4s ease-in-out 0s infinite alternate;
+}
+@keyframes floatY {
+  from {
+    transform: translate(0px, -30px);
+  }
+  to {
+    transform: translate(0, 30px);
+  }
+}
