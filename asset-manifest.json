@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/react-circular-menu-test/static/css/main.7f431416.chunk.css",
-    "main.js": "/react-circular-menu-test/static/js/main.81b5099e.chunk.js",
-    "main.js.map": "/react-circular-menu-test/static/js/main.81b5099e.chunk.js.map",
-    "runtime-main.js": "/react-circular-menu-test/static/js/runtime-main.33924af7.js",
-    "runtime-main.js.map": "/react-circular-menu-test/static/js/runtime-main.33924af7.js.map",
-    "static/js/2.3f4280dc.chunk.js": "/react-circular-menu-test/static/js/2.3f4280dc.chunk.js",
-    "static/js/2.3f4280dc.chunk.js.map": "/react-circular-menu-test/static/js/2.3f4280dc.chunk.js.map",
-    "static/js/3.eae27e33.chunk.js": "/react-circular-menu-test/static/js/3.eae27e33.chunk.js",
-    "static/js/3.eae27e33.chunk.js.map": "/react-circular-menu-test/static/js/3.eae27e33.chunk.js.map",
+    "main.css": "/react-circular-menu-test/static/css/main.f7b0f5e0.chunk.css",
+    "main.js": "/react-circular-menu-test/static/js/main.073e55c9.chunk.js",
+    "main.js.map": "/react-circular-menu-test/static/js/main.073e55c9.chunk.js.map",
+    "runtime-main.js": "/react-circular-menu-test/static/js/runtime-main.a1297b22.js",
+    "runtime-main.js.map": "/react-circular-menu-test/static/js/runtime-main.a1297b22.js.map",
+    "static/js/2.d5c1605f.chunk.js": "/react-circular-menu-test/static/js/2.d5c1605f.chunk.js",
+    "static/js/2.d5c1605f.chunk.js.map": "/react-circular-menu-test/static/js/2.d5c1605f.chunk.js.map",
+    "static/js/3.81006aff.chunk.js": "/react-circular-menu-test/static/js/3.81006aff.chunk.js",
+    "static/js/3.81006aff.chunk.js.map": "/react-circular-menu-test/static/js/3.81006aff.chunk.js.map",
     "index.html": "/react-circular-menu-test/index.html",
-    "static/css/main.7f431416.chunk.css.map": "/react-circular-menu-test/static/css/main.7f431416.chunk.css.map",
-    "static/js/2.3f4280dc.chunk.js.LICENSE.txt": "/react-circular-menu-test/static/js/2.3f4280dc.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/react-circular-menu-test/static/media/PikPng.com_real-fish-png_2506996.42f24ee4.png",
-    "static/media/logo.6ce24c58.svg": "/react-circular-menu-test/static/media/logo.6ce24c58.svg"
+    "static/css/main.f7b0f5e0.chunk.css.map": "/react-circular-menu-test/static/css/main.f7b0f5e0.chunk.css.map",
+    "static/js/2.d5c1605f.chunk.js.LICENSE.txt": "/react-circular-menu-test/static/js/2.d5c1605f.chunk.js.LICENSE.txt",
+    "static/media/CircularMenu.css": "/react-circular-menu-test/static/media/PikPng.com_real-fish-png_2506996.42f24ee4.png",
+    "static/media/pexels-aron-visuals-1643113.7e80ca97.jpg": "/react-circular-menu-test/static/media/pexels-aron-visuals-1643113.7e80ca97.jpg",
+    "static/media/TextPage.css": "/react-circular-menu-test/static/media/pexels-gustavo-cruz-1592119.747874e8.jpg",
+    "static/media/pexels-valdemaras-d-1687678.36cf0491.jpg": "/react-circular-menu-test/static/media/pexels-valdemaras-d-1687678.36cf0491.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.33924af7.js",
-    "static/js/2.3f4280dc.chunk.js",
-    "static/css/main.7f431416.chunk.css",
-    "static/js/main.81b5099e.chunk.js"
+    "static/js/runtime-main.a1297b22.js",
+    "static/js/2.d5c1605f.chunk.js",
+    "static/css/main.f7b0f5e0.chunk.css",
+    "static/js/main.073e55c9.chunk.js"
   ]
 }
