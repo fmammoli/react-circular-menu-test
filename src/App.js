@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomMenu from "./CustomMenu";
-import Pdf from "./Pdf";
+import Book from "./Book";
+import FlipBook from "./FlipBook";
+import TextPage from "./TextPage";
 import "./App.css";
 
 function App() {
@@ -9,11 +11,17 @@ function App() {
     <div style={{ height: "100%" }}>
       <Router>
         <Switch>
-          <Route exact path="/">
-            <CustomMenu></CustomMenu>
+          <Route exact path="/book">
+            <Book></Book>
           </Route>
-          <Route exact path="/pdf">
-            <Pdf></Pdf>
+          <Route exact path="/flipbook">
+            <FlipBook></FlipBook>
+          </Route>
+          <Route exact path="/textpage">
+            <TextPage></TextPage>
+          </Route>
+          <Route path="/">
+            <CustomMenu></CustomMenu>
           </Route>
         </Switch>
       </Router>

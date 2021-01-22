@@ -1,0 +1,10 @@
+.fixed-background {
+  background-image: url(./pexels-gustavo-cruz-1592119.jpg);
+  height: 100v;
+}
+.scrollable-container {
+  overflow: scroll;
+}
+p {
+  color: white;
+}

@@ -21,14 +21,14 @@ function CustomMenu() {
       items: [
         {
           id: "one",
-          title: "Pdf",
+          title: "Book 1",
           rotation: 0,
           move: defaultMove,
           hasSubItems: true,
           rootIsActive: false, //To set as the state of the Root Item
           setActive: false, //A setter to its own state
           isActive: false, //Its own state
-          link: "/pdf",
+          link: "/book",
           items: [
             {
               id: "one-one",
@@ -46,7 +46,7 @@ function CustomMenu() {
               items: [
                 {
                   id: "one-one-one",
-                  title: "One one one",
+                  title: "Book 1",
                   rotation: 0,
                   move: defaultMove,
                   rootIsActive: false, //To be set as the state of the Root Item
@@ -54,7 +54,7 @@ function CustomMenu() {
                   middleIsActive: false, //To be set as the Grandparent State
                   secondPosition: { rotation: false, move: false }, //To be set as the rotation and
                   parentIsActive: false, //To be set as the State of the Parent Item, in this case item One-one
-                  link: "/pdf",
+                  link: "/book",
                 },
               ],
             },
@@ -111,6 +111,7 @@ function CustomMenu() {
           rootIsActive: false,
           setActive: false,
           isActive: false,
+          link: "/flipbook",
         },
         {
           id: "three",
@@ -121,6 +122,7 @@ function CustomMenu() {
           rootIsActive: false,
           setActive: false,
           isActive: false,
+          link: "/textpage",
           items: [
             {
               id: "three-one",
@@ -444,7 +446,7 @@ function CustomMenu() {
             parentIsActive={item.parentIsActive}
             secondPosition={item.secondPosition}
           >
-            <Link to={item.link}>{item.title}</Link>
+            {item.link ? <Link to={item.link}>{item.title}</Link> : item.title}
           </SubSubMenuItem>
         ))}
         {flatMenus.secondMenu.map((item) => (
@@ -465,7 +467,7 @@ function CustomMenu() {
             setOpenedThirdMenus={setOpenedThirdMenus}
             openedThirdMenus={openedThirdMenus}
           >
-            <Link to={item.link}>{item.title}</Link>
+            {item.link ? <Link to={item.link}>{item.title}</Link> : item.title}
           </SubMenuItem>
         ))}
         {flatMenus.firstMenu.map((item) => (
@@ -482,7 +484,7 @@ function CustomMenu() {
             setOpenedSecondMenus={setOpenedSecondMenus}
             openedSecondMenus={openedSecondMenus}
           >
-            <Link to={item.link}>{item.title}</Link>
+            {item.link ? <Link to={item.link}>{item.title}</Link> : item.title}
           </CircularMenuItem>
         ))}
       </CircularMenu>
