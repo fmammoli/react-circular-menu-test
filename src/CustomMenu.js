@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useMemo } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useState, useMemo } from "react";
+import { BrowserRouter as Link } from "react-router-dom";
 import "./App.css";
 
 import {
@@ -72,20 +72,7 @@ function CustomMenu() {
               isActive: false, //Its own state
               parentIsActive: false, // To be set as the state of the parent, in this case the Item One.
             },
-            {
-              id: "one-three",
-              title: "One three",
-              rotation: 180,
-              move: defaultMove,
-              isSubItem: true,
-              hasSubItems: false,
-              hasSubSubItems: false,
-              rootIsActive: false, //To set the state of the rootItem
-              position: { rotation: false, move: false }, // To be set as the rotation and move of the parent
-              setActive: false, //The setter of its own state
-              isActive: false, //Its own state
-              parentIsActive: false, // To be set as the state of the parent, in this case the Item One.
-            },
+
             {
               id: "one-four",
               title: "One four",
@@ -280,7 +267,7 @@ function CustomMenu() {
   //Item One sub Items
   [menuState["one-one"][0], menuState["one-one"][1]] = useState(false);
   [menuState["one-two"][0], menuState["one-two"][1]] = useState(false);
-  [menuState["one-three"][0], menuState["one-three"][1]] = useState(false);
+  //[menuState["one-three"][0], menuState["one-three"][1]] = useState(false);
   [menuState["one-four"][0], menuState["one-four"][1]] = useState(false);
 
   //Item Two sub Items (in case it is needed)
@@ -301,22 +288,17 @@ function CustomMenu() {
   [menuState["one-one-one"][0], menuState["one-one-one"][1]] = useState(false);
   //[menuState["one-one-two"][0], menuState["one-one-two"][1]] = useState(false);
 
-  [menuState["three-two-one"][0], menuState["three-two-one"][1]] = useState(
-    false
-  );
-  [menuState["three-two-two"][0], menuState["three-two-two"][1]] = useState(
-    false
-  );
-  [menuState["three-two-three"][0], menuState["three-two-three"][1]] = useState(
-    false
-  );
+  [menuState["three-two-one"][0], menuState["three-two-one"][1]] =
+    useState(false);
+  [menuState["three-two-two"][0], menuState["three-two-two"][1]] =
+    useState(false);
+  [menuState["three-two-three"][0], menuState["three-two-three"][1]] =
+    useState(false);
 
-  [menuState["four-one-one"][0], menuState["four-one-one"][1]] = useState(
-    false
-  );
-  [menuState["four-one-two"][0], menuState["four-one-two"][1]] = useState(
-    false
-  );
+  [menuState["four-one-one"][0], menuState["four-one-one"][1]] =
+    useState(false);
+  [menuState["four-one-two"][0], menuState["four-one-two"][1]] =
+    useState(false);
 
   function calculateMenu(menu) {
     //console.log("Calculating menu and assigning state variables");
@@ -393,9 +375,10 @@ function CustomMenu() {
       thirdMenu: flatThirdMenu,
     };
   }
-  const flatMenus = useMemo(() => makeFlatMenus(calculatedMenu), [
-    calculatedMenu,
-  ]);
+  const flatMenus = useMemo(
+    () => makeFlatMenus(calculatedMenu),
+    [calculatedMenu]
+  );
 
   //[openedFirstMenus, setOpenedFirstMenus] = useState([]);
   const [openedSecondMenus, setOpenedSecondMenus] = useState([]);
