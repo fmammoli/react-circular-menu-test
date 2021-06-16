@@ -8,6 +8,32 @@ import TextPage from "./TextPage";
 import "./App.css";
 
 function App() {
+  const containerRef = React.useRef();
+
+  React.useEffect(() => {
+    if (containerRef && containerRef.current) {
+      console.log(containerRef.current);
+
+      if (containerRef.current.plugins.get("emitters").array[0].paused) {
+        setTimeout(() => {
+          containerRef.current.plugins.get("emitters").array[0].play();
+        }, 3000);
+      } else {
+        console.log("paused");
+        setTimeout(() => {
+          containerRef.current.plugins.get("emitters").array[0].pause();
+        }, 3000);
+      }
+
+      // if (containerRef.plugins?.get("emitters").array[0].paused == false) {
+      //   setTimeout(() => {
+      //     //ontainer.plugins.get("emitters").array[0].play();
+      //     containerRef.plugins.get("emitters").array[0].pause();
+      //   }, 200);
+      // }
+    }
+  });
+
   const options = {
     autoPlay: true,
     background: {
@@ -58,7 +84,7 @@ function App() {
         },
         onHover: {
           enable: true,
-          mode: ["connect", "attract"],
+          mode: ["attract", "connect"],
           parallax: {
             enable: false,
             force: 2,
@@ -72,7 +98,7 @@ function App() {
           distance: 200,
           duration: 0.4,
           easing: "ease-out-quad",
-          factor: 1.5,
+          factor: 1,
           maxSpeed: 30,
           speed: 1,
         },
@@ -149,7 +175,7 @@ function App() {
               },
             },
             collisions: {
-              enable: false,
+              enable: true,
             },
             links: {
               enable: false,
@@ -158,7 +184,7 @@ function App() {
               outModes: {
                 default: "destroy",
               },
-              speed: 2,
+              speed: 1,
             },
             size: {
               value: 5,
@@ -187,14 +213,14 @@ function App() {
       bounce: {
         horizontal: {
           random: {
-            enable: true,
+            enable: false,
             minimumValue: 0.1,
           },
           value: 1,
         },
         vertical: {
           random: {
-            enable: true,
+            enable: false,
             minimumValue: 0.1,
           },
           value: 1,
@@ -274,13 +300,13 @@ function App() {
         },
       },
       life: {
-        count: 0,
+        count: 1,
         delay: {
           random: {
             enable: false,
             minimumValue: 0,
           },
-          value: 0,
+          value: 0.5,
           sync: false,
         },
         duration: {
@@ -289,7 +315,7 @@ function App() {
             minimumValue: 0.0001,
           },
           value: 0,
-          sync: false,
+          sync: true,
         },
       },
       // links: {
@@ -329,7 +355,7 @@ function App() {
             y: 3000,
           },
         },
-        decay: 0,
+        decay: 0.002,
         distance: 0,
         direction: "none",
         drift: 0,
@@ -351,11 +377,11 @@ function App() {
           enable: false,
         },
         outModes: {
-          default: "out",
-          bottom: "out",
-          left: "out",
-          right: "out",
-          top: "out",
+          default: "destoy",
+          bottom: "bounce",
+          left: "bounce",
+          right: "bounce",
+          top: "bounce",
         },
         random: false,
         size: false,
@@ -378,7 +404,7 @@ function App() {
           factor: 1000,
         },
         limit: 0,
-        value: 150,
+        value: 0,
       },
       opacity: {
         random: {
@@ -471,11 +497,39 @@ function App() {
     pauseOnOutsideViewport: true,
     responsive: [],
     themes: [],
+    emitters: [
+      {
+        autoPlay: true,
+        life: {},
+        rate: {
+          quantity: 150,
+          delay: 3,
+        },
+        size: {
+          mode: "percent",
+          height: 0,
+          width: 0,
+        },
+        direction: "none",
+        position: {
+          x: 50,
+          y: 56,
+        },
+        move: {
+          speed: 1,
+          random: false,
+        },
+      },
+    ],
   };
 
   return (
     <div style={{ height: "100%" }}>
-      <Particles id="tsparticles" options={options}></Particles>
+      <Particles
+        id="tsparticles"
+        container={containerRef}
+        options={options}
+      ></Particles>
       <Router>
         <Switch>
           <Route exact path="/book"></Route>
