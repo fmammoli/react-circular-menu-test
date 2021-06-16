@@ -48,7 +48,7 @@ function App() {
       events: {
         onClick: {
           enable: true,
-          mode: ["attract"],
+          mode: ["repulse"],
         },
         onDiv: {
           selectors: [".ball"],
@@ -69,11 +69,11 @@ function App() {
       },
       modes: {
         attract: {
-          distance: 300,
+          distance: 200,
           duration: 0.4,
           easing: "ease-out-quad",
-          factor: 2,
-          maxSpeed: 50,
+          factor: 1.5,
+          maxSpeed: 30,
           speed: 1,
         },
         bounce: {
@@ -378,7 +378,7 @@ function App() {
           factor: 1000,
         },
         limit: 0,
-        value: 200,
+        value: 150,
       },
       opacity: {
         random: {
