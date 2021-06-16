@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-circular-menu-test/static/css/main.dc762fd5.chunk.css",
-    "main.js": "/react-circular-menu-test/static/js/main.c2002f5f.chunk.js",
-    "main.js.map": "/react-circular-menu-test/static/js/main.c2002f5f.chunk.js.map",
+    "main.js": "/react-circular-menu-test/static/js/main.ee7c5d66.chunk.js",
+    "main.js.map": "/react-circular-menu-test/static/js/main.ee7c5d66.chunk.js.map",
     "runtime-main.js": "/react-circular-menu-test/static/js/runtime-main.9e7f6e8f.js",
     "runtime-main.js.map": "/react-circular-menu-test/static/js/runtime-main.9e7f6e8f.js.map",
     "static/js/2.d8c959b6.chunk.js": "/react-circular-menu-test/static/js/2.d8c959b6.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.9e7f6e8f.js",
     "static/js/2.d8c959b6.chunk.js",
     "static/css/main.dc762fd5.chunk.css",
-    "static/js/main.c2002f5f.chunk.js"
+    "static/js/main.ee7c5d66.chunk.js"
   ]
 }
