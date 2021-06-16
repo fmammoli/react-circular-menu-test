@@ -503,7 +503,7 @@ function App() {
         life: {},
         rate: {
           quantity: 150,
-          delay: 3,
+          delay: 30,
         },
         size: {
           mode: "percent",
