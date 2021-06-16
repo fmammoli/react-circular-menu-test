@@ -14,22 +14,15 @@ function App() {
     if (containerRef && containerRef.current) {
       console.log(containerRef.current);
 
-      if (containerRef.current.plugins.get("emitters").array[0].paused) {
-        setTimeout(() => {
-          containerRef.current.plugins.get("emitters").array[0].play();
-        }, 3000);
-      } else {
-        console.log("paused");
-        setTimeout(() => {
-          containerRef.current.plugins.get("emitters").array[0].pause();
-        }, 3000);
-      }
-
-      // if (containerRef.plugins?.get("emitters").array[0].paused == false) {
+      // if (containerRef.current.plugins.get("emitters").array[0].paused) {
       //   setTimeout(() => {
-      //     //ontainer.plugins.get("emitters").array[0].play();
-      //     containerRef.plugins.get("emitters").array[0].pause();
-      //   }, 200);
+      //     containerRef.current.plugins.get("emitters").array[0].play();
+      //   }, 3000);
+      // } else {
+      //   console.log("paused");
+      //   setTimeout(() => {
+      //     containerRef.current.plugins.get("emitters").array[0].pause();
+      //   }, 3000);
       // }
     }
   });
@@ -175,7 +168,7 @@ function App() {
               },
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             links: {
               enable: false,
@@ -314,8 +307,8 @@ function App() {
             enable: false,
             minimumValue: 0.0001,
           },
-          value: 0,
-          sync: true,
+          value: 60,
+          sync: false,
         },
       },
       // links: {
@@ -503,7 +496,7 @@ function App() {
         life: {},
         rate: {
           quantity: 150,
-          delay: 30,
+          delay: 50,
         },
         size: {
           mode: "percent",
