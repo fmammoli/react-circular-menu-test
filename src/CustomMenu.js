@@ -10,7 +10,7 @@ import {
 } from "./CircularMenu";
 
 function CustomMenu() {
-  const defaultMove = 120;
+  const defaultMove = 300;
   let menu = useMemo(() => {
     // let itemOneOneSubItems = [];
 

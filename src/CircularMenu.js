@@ -276,7 +276,7 @@ function CircularMenuRootItem(props) {
         onMouseEnter={props.handleClick}
         className="center-grid circular-item"
       >
-        <div className="ball background-container root-item-background">
+        <div className=" ball-root background-container root-item-background">
           <p className="menu-item-label">{props.title}</p>
         </div>
       </div>

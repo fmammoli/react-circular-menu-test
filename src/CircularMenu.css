@@ -1,10 +1,15 @@
 :root {
   --move-animation-duration: 1s;
-  --ball-size: 100px;
+  --ball-root-size: 220px;
+  --ball-size: 150px;
   --bal-smaller-size: 80px;
   --tiny-ball-size: 50px;
 }
-
+.ball-root {
+  height: var(--ball-root-size);
+  width: var(--ball-root-size);
+  border-radius: 50%;
+}
 .title h1 {
   text-align: center;
 }
