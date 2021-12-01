@@ -71,7 +71,7 @@ function SubSubMenuItem({
                     ? { transform: `translate(${move}px,0px)` }
                     : null
                 }
-                onClick={handleClick}
+                onMouseEnter={handleClick}
               >
                 <div
                   className="ball tiny-ball background-container sub-sub-item-background"
@@ -173,7 +173,7 @@ function SubMenuItem({
             style={
               parentIsActive ? { transform: `translate(${move}px,0px)` } : null
             }
-            onClick={handleClick}
+            onMouseEnter={handleClick}
           >
             <div
               className="ball smaller-ball background-container sub-item-background"
@@ -243,7 +243,7 @@ function CircularMenuItem({
       <div
         className="center-grid circular-item"
         style={rootIsActive ? { transform: `translate(${move}px,0px)` } : null}
-        onClick={handleClick}
+        onMouseEnter={handleClick}
       >
         <div
           id={`item-${id}`}
@@ -273,7 +273,7 @@ function CircularMenuRootItem(props) {
     <div className="grid-container menu-item root-item">
       <div
         id="root-item"
-        onClick={props.handleClick}
+        onMouseEnter={props.handleClick}
         className="center-grid circular-item"
       >
         <div className="ball background-container root-item-background">

@@ -782,7 +782,7 @@ function App() {
         },
       },
       life: {
-        count: 1,
+        count: 0,
         delay: {
           random: {
             enable: false,
@@ -886,7 +886,7 @@ function App() {
           factor: 1000,
         },
         limit: 0,
-        value: 150,
+        value: 200,
       },
       opacity: {
         random: {
@@ -983,11 +983,11 @@ function App() {
 
   return (
     <div style={{ height: "100%" }}>
-      <Particles
+      {/* <Particles
         id="tsparticles"
         container={containerRef}
         options={options}
-      ></Particles>
+      ></Particles> */}
       <Router>
         <Switch>
           <Route exact path="/book"></Route>

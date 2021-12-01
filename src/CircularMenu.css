@@ -37,8 +37,8 @@
 }
 
 .ball {
-  height: 100px;
-  width: 100px;
+  height: var(--ball-size);
+  width: var(--ball-size);
   border-radius: 50%;
 }
 
@@ -132,6 +132,7 @@
 }
 .root-item-background {
   background-color: cornflowerblue;
+  background-image: url(drummond.png);
 }
 .sub-item-background {
   background-color: aquamarine;
