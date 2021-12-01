@@ -2,10 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Particles from "react-tsparticles";
 import CustomMenu from "./CustomMenu";
-
+import AutoplayVideo from "./AutoplayVideo";
 import TextPage from "./TextPage";
-
-import vid from "./homebranco.mp4";
 
 import "./App.css";
 
@@ -985,14 +983,8 @@ function App() {
 
   return (
     <div class="fontFace">
-      <video
-        src={vid}
-        autoPlay
-        playsInline
-        muted
-        id="bgvid"
-        className="animateOpacityReverse"
-      ></video>
+      <AutoplayVideo></AutoplayVideo>
+
       <Particles
         id="tsparticles"
         container={containerRef}

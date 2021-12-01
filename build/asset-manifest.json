@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/react-circular-menu-test/static/css/main.fe690aa6.chunk.css",
-    "main.js": "/react-circular-menu-test/static/js/main.fbd40569.chunk.js",
-    "main.js.map": "/react-circular-menu-test/static/js/main.fbd40569.chunk.js.map",
+    "main.css": "/react-circular-menu-test/static/css/main.ca4aca8d.chunk.css",
+    "main.js": "/react-circular-menu-test/static/js/main.173f9511.chunk.js",
+    "main.js.map": "/react-circular-menu-test/static/js/main.173f9511.chunk.js.map",
     "runtime-main.js": "/react-circular-menu-test/static/js/runtime-main.9e7f6e8f.js",
     "runtime-main.js.map": "/react-circular-menu-test/static/js/runtime-main.9e7f6e8f.js.map",
-    "static/js/2.ecc776a7.chunk.js": "/react-circular-menu-test/static/js/2.ecc776a7.chunk.js",
-    "static/js/2.ecc776a7.chunk.js.map": "/react-circular-menu-test/static/js/2.ecc776a7.chunk.js.map",
+    "static/js/2.c6d320b2.chunk.js": "/react-circular-menu-test/static/js/2.c6d320b2.chunk.js",
+    "static/js/2.c6d320b2.chunk.js.map": "/react-circular-menu-test/static/js/2.c6d320b2.chunk.js.map",
     "static/js/3.c5615299.chunk.js": "/react-circular-menu-test/static/js/3.c5615299.chunk.js",
     "static/js/3.c5615299.chunk.js.map": "/react-circular-menu-test/static/js/3.c5615299.chunk.js.map",
     "index.html": "/react-circular-menu-test/index.html",
-    "static/css/main.fe690aa6.chunk.css.map": "/react-circular-menu-test/static/css/main.fe690aa6.chunk.css.map",
-    "static/js/2.ecc776a7.chunk.js.LICENSE.txt": "/react-circular-menu-test/static/js/2.ecc776a7.chunk.js.LICENSE.txt",
-    "static/media/CircularMenu.css": "/react-circular-menu-test/static/media/drummond.421caf7d.png",
+    "static/css/main.ca4aca8d.chunk.css.map": "/react-circular-menu-test/static/css/main.ca4aca8d.chunk.css.map",
+    "static/js/2.c6d320b2.chunk.js.LICENSE.txt": "/react-circular-menu-test/static/js/2.c6d320b2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-circular-menu-test/static/media/DINAlternate-Bold.11cf96e5.woff",
+    "static/media/CircularMenu.css": "/react-circular-menu-test/static/media/PikPng.com_real-fish-png_2506996.42f24ee4.png",
+    "static/media/homebranco.c80adb1d.mp4": "/react-circular-menu-test/static/media/homebranco.c80adb1d.mp4",
     "static/media/TextPage.css": "/react-circular-menu-test/static/media/pexels-gustavo-cruz-1592119.747874e8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9e7f6e8f.js",
-    "static/js/2.ecc776a7.chunk.js",
-    "static/css/main.fe690aa6.chunk.css",
-    "static/js/main.fbd40569.chunk.js"
+    "static/js/2.c6d320b2.chunk.js",
+    "static/css/main.ca4aca8d.chunk.css",
+    "static/js/main.173f9511.chunk.js"
   ]
 }
