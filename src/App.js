@@ -5,6 +5,8 @@ import CustomMenu from "./CustomMenu";
 
 import TextPage from "./TextPage";
 
+import vid from "./homebranco.mp4";
+
 import "./App.css";
 
 function App() {
@@ -982,12 +984,13 @@ function App() {
   };
 
   return (
-    <div style={{ height: "100%" }}>
+    <div>
+      <video src={vid} autoPlay playsInline loop muted id="bgvid"></video>
       {/* <Particles
-        id="tsparticles"
-        container={containerRef}
-        options={options}
-      ></Particles> */}
+          id="tsparticles"
+          container={containerRef}
+          options={options}
+        ></Particles> */}
       <Router>
         <Switch>
           <Route exact path="/book"></Route>
@@ -995,6 +998,7 @@ function App() {
           <Route exact path="/textpage">
             <TextPage></TextPage>
           </Route>
+          <Route exact path="/drummondPage"></Route>
           <Route path="/">
             <CustomMenu></CustomMenu>
           </Route>

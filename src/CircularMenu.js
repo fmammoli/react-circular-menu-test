@@ -213,6 +213,7 @@ function CircularMenuItem({
   setOpenedSecondMenus,
   openedSecondMenus,
   link,
+  ballSize,
   children,
 }) {
   useEffect(() => {
@@ -242,7 +243,9 @@ function CircularMenuItem({
     >
       <div
         className="center-grid circular-item"
-        style={rootIsActive ? { transform: `translate(${move}px,0px)` } : null}
+        style={
+          rootIsActive ? { transform: `translate3d(${move}px,0,0)` } : null
+        }
         onMouseEnter={handleClick}
       >
         <div
@@ -252,7 +255,11 @@ function CircularMenuItem({
         >
           <div
             className="menu-item-label"
-            // style={{ transform: `rotate(-${rotation}deg)` }}
+            style={
+              rootIsActive
+                ? { transform: `translate3d(0,${ballSize / 2}px,0)` }
+                : null
+            }
           >
             {children}
           </div>
@@ -276,7 +283,7 @@ function CircularMenuRootItem(props) {
         onMouseEnter={props.handleClick}
         className="center-grid circular-item"
       >
-        <div className=" ball-root background-container root-item-background">
+        <div className="ball-root background-container root-item-background">
           <p className="menu-item-label">{props.title}</p>
         </div>
       </div>
@@ -296,7 +303,7 @@ function CircularMenu(props) {
         {props.children}
         <CircularMenuRootItem
           handleClick={handleClick}
-          title="Root"
+          title={props.rootTitle}
         ></CircularMenuRootItem>
       </div>
     </nav>

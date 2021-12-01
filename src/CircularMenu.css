@@ -1,18 +1,48 @@
 :root {
   --move-animation-duration: 1s;
-  --ball-root-size: 220px;
+  --ball-root-size: 200px;
   --ball-size: 150px;
   --bal-smaller-size: 80px;
   --tiny-ball-size: 50px;
 }
-.ball-root {
-  height: var(--ball-root-size);
-  width: var(--ball-root-size);
-  border-radius: 50%;
+
+.viewport-menu {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0;
+  bottom: 0;
 }
+
+.animateOpacity {
+  animation-duration: 0s;
+  animation-name: animate-fade;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.viewport-header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .title h1 {
   text-align: center;
 }
+
 .grid-container {
   display: grid;
   align-items: center;
@@ -46,7 +76,11 @@
   width: var(--ball-size);
   border-radius: 50%;
 }
-
+.ball-root {
+  height: var(--ball-root-size);
+  width: var(--ball-root-size);
+  border-radius: 50%;
+}
 .menu-item {
   grid-area: 1 / 1 / 2 / 2;
   list-style: none;
@@ -59,6 +93,7 @@
   justify-self: center;
   color: black;
   font-weight: bold;
+  transition: 0.7s ease-out;
 }
 
 .sub-menu-item-label {
@@ -137,7 +172,7 @@
 }
 .root-item-background {
   background-color: cornflowerblue;
-  background-image: url(drummond.png);
+  background-image: url(PikPng.com_real-fish-png_2506996.png);
 }
 .sub-item-background {
   background-color: aquamarine;

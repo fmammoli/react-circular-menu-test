@@ -10,19 +10,23 @@ import {
 } from "./CircularMenu";
 
 function CustomMenu() {
-  const defaultMove = 300;
+  //Tamanho do movimento dos circulos.
+  //O tamanho dos elementos estão no CircularMenu.css nas propriedade :root
+  const defaultMove = 240;
+  const ballSize = 150;
+
   let menu = useMemo(() => {
     // let itemOneOneSubItems = [];
 
     // let itemOneSubItems = [];
 
     let firstMenu = {
-      root: { id: "root" },
+      root: { id: "root", title: "A Bolsa e a Vida" },
       items: [
         {
           id: "one",
-          title: "Book 1",
-          rotation: 0,
+          title: "A Bolsa e a Vida",
+          rotation: 270 - 45,
           move: defaultMove,
           hasSubItems: true,
           rootIsActive: false, //To set as the state of the Root Item
@@ -89,21 +93,21 @@ function CustomMenu() {
             },
           ],
         },
-        {
-          id: "two",
-          title: "Two",
-          rotation: 90,
-          move: defaultMove,
-          hasSubItems: false,
-          rootIsActive: false,
-          setActive: false,
-          isActive: false,
-          link: "/flipbook",
-        },
+        // {
+        //   id: "two",
+        //   title: "Two",
+        //   rotation: 90,
+        //   move: defaultMove,
+        //   hasSubItems: false,
+        //   rootIsActive: false,
+        //   setActive: false,
+        //   isActive: false,
+        //   link: "/flipbook",
+        // },
         {
           id: "three",
-          title: "Three",
-          rotation: 180,
+          title: "Manifesto Terrano",
+          rotation: 360 - 45,
           move: defaultMove,
           hasSubItems: true,
           rootIsActive: false,
@@ -178,8 +182,8 @@ function CustomMenu() {
         },
         {
           id: "four",
-          title: "Four",
-          rotation: 270,
+          title: "Histórias do Tempo e da Terra",
+          rotation: 90,
           move: defaultMove,
           hasSubItems: true,
           rootIsActive: false,
@@ -259,7 +263,7 @@ function CustomMenu() {
 
   //First Level Menu Items
   [menuState["one"][0], menuState["one"][1]] = useState(false);
-  [menuState["two"][0], menuState["two"][1]] = useState(false);
+  //[menuState["two"][0], menuState["two"][1]] = useState(false);
   [menuState["three"][0], menuState["three"][1]] = useState(false);
   [menuState["four"][0], menuState["four"][1]] = useState(false);
 
@@ -411,67 +415,86 @@ function CustomMenu() {
   }
 
   return (
-    <div style={{ height: "100%" }}>
-      <header className="title">
+    <>
+      <header className="viewport-header">
         <h1>Circular Menu Test</h1>
       </header>
-      <CircularMenu setRootItem={handleRootClick} menuData={menu}>
-        {flatMenus.thirdMenu.map((item) => (
-          <SubSubMenuItem
-            key={item.id}
-            id={item.id}
-            title={item.title}
-            rotation={item.rotation}
-            move={item.move}
-            rootIsActive={item.rootIsActive}
-            firstPosition={item.firstPosition}
-            middleIsActive={item.middleIsActive}
-            parentIsActive={item.parentIsActive}
-            secondPosition={item.secondPosition}
-          >
-            {item.link ? <Link to={item.link}>{item.title}</Link> : item.title}
-          </SubSubMenuItem>
-        ))}
-        {flatMenus.secondMenu.map((item) => (
-          <SubMenuItem
-            key={item.id}
-            isSubItem={true}
-            hasSubItems={item.hasSubItems}
-            position={item.position}
-            id={item.id}
-            title={item.title}
-            rotation={item.rotation}
-            move={item.move}
-            rootIsActive={item.rootIsActive}
-            parentIsActive={item.parentIsActive}
-            parentId={item.parentId}
-            isActive={item.isActive}
-            setActive={item.setActive}
-            setOpenedThirdMenus={setOpenedThirdMenus}
-            openedThirdMenus={openedThirdMenus}
-          >
-            {item.link ? <Link to={item.link}>{item.title}</Link> : item.title}
-          </SubMenuItem>
-        ))}
-        {flatMenus.firstMenu.map((item) => (
-          <CircularMenuItem
-            key={item.id}
-            hasSubItems={item.hasSubItems}
-            id={item.id}
-            title={item.title}
-            rotation={item.rotation}
-            move={item.move}
-            rootIsActive={item.rootIsActive}
-            isActive={item.isActive}
-            setActive={item.setActive}
-            setOpenedSecondMenus={setOpenedSecondMenus}
-            openedSecondMenus={openedSecondMenus}
-          >
-            {item.link ? <Link to={item.link}>{item.title}</Link> : item.title}
-          </CircularMenuItem>
-        ))}
-      </CircularMenu>
-    </div>
+      <div className="viewport-menu animateOpacity">
+        <CircularMenu
+          setRootItem={handleRootClick}
+          menuData={menu}
+          rootTitle={"A Bolsa e a Vida"}
+        >
+          {flatMenus.thirdMenu.map((item) => (
+            <SubSubMenuItem
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              rotation={item.rotation}
+              move={item.move}
+              rootIsActive={item.rootIsActive}
+              firstPosition={item.firstPosition}
+              middleIsActive={item.middleIsActive}
+              parentIsActive={item.parentIsActive}
+              secondPosition={item.secondPosition}
+            >
+              {item.link ? (
+                <Link to={item.link}>{item.title}</Link>
+              ) : (
+                item.title
+              )}
+            </SubSubMenuItem>
+          ))}
+          {flatMenus.secondMenu.map((item) => (
+            <SubMenuItem
+              key={item.id}
+              isSubItem={true}
+              hasSubItems={item.hasSubItems}
+              position={item.position}
+              id={item.id}
+              title={item.title}
+              rotation={item.rotation}
+              move={item.move}
+              rootIsActive={item.rootIsActive}
+              parentIsActive={item.parentIsActive}
+              parentId={item.parentId}
+              isActive={item.isActive}
+              setActive={item.setActive}
+              setOpenedThirdMenus={setOpenedThirdMenus}
+              openedThirdMenus={openedThirdMenus}
+            >
+              {item.link ? (
+                <Link to={item.link}>{item.title}</Link>
+              ) : (
+                item.title
+              )}
+            </SubMenuItem>
+          ))}
+          {flatMenus.firstMenu.map((item) => (
+            <CircularMenuItem
+              key={item.id}
+              hasSubItems={item.hasSubItems}
+              id={item.id}
+              title={item.title}
+              rotation={item.rotation}
+              move={item.move}
+              rootIsActive={item.rootIsActive}
+              isActive={item.isActive}
+              setActive={item.setActive}
+              setOpenedSecondMenus={setOpenedSecondMenus}
+              openedSecondMenus={openedSecondMenus}
+              ballSize={ballSize}
+            >
+              {item.link ? (
+                <Link to={item.link}>{item.title}</Link>
+              ) : (
+                item.title
+              )}
+            </CircularMenuItem>
+          ))}
+        </CircularMenu>
+      </div>
+    </>
   );
 }
 
