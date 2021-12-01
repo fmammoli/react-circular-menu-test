@@ -25,7 +25,7 @@ function CustomMenu() {
       items: [
         {
           id: "one",
-          title: "A Bolsa e a Vida",
+          title: "Micróbio-antropologia",
           rotation: 270 - 45,
           move: defaultMove,
           hasSubItems: true,
@@ -390,6 +390,7 @@ function CustomMenu() {
 
   function handleRootClick() {
     console.log("root-click");
+
     if (rootItemState === false) {
       setRooItemState(true);
     } else {
@@ -416,8 +417,8 @@ function CustomMenu() {
 
   return (
     <>
-      <header className="viewport-header">
-        <h1>Circular Menu Test</h1>
+      <header className="viewport-header title">
+        <h1>Fabulações Miceliais</h1>
       </header>
       <div className="viewport-menu animateOpacity">
         <CircularMenu
@@ -493,6 +494,15 @@ function CustomMenu() {
             </CircularMenuItem>
           ))}
         </CircularMenu>
+
+        <div class="footer">
+          <div>
+            <a href="">Como ler essa doidera?</a>
+          </div>
+          <div>
+            <a href="">Agradecimentos</a>
+          </div>
+        </div>
       </div>
     </>
   );

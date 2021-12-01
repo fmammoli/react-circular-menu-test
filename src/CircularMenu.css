@@ -15,10 +15,10 @@
 }
 
 .animateOpacity {
-  animation-duration: 0s;
+  animation-duration: 0.3s;
   animation-name: animate-fade;
-  animation-delay: 0s;
-  animation-timing-function: ease-out;
+  animation-delay: 9s;
+  animation-timing-function: ease-in;
   animation-fill-mode: backwards;
 }
 
@@ -41,6 +41,7 @@
 
 .title h1 {
   text-align: center;
+  padding: 2rem;
 }
 
 .grid-container {
@@ -94,6 +95,16 @@
   color: black;
   font-weight: bold;
   transition: 0.7s ease-out;
+}
+
+.menu-item-label--root {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  color: black;
+  font-weight: bold;
+  transition: 0.7s ease-out;
+  transform: translate3d(0, 100px, 0);
 }
 
 .sub-menu-item-label {
@@ -205,4 +216,14 @@
   to {
     transform: translate(0, 30px);
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 1.2rem;
 }

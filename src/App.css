@@ -10,6 +10,18 @@ html,
 body {
   height: 100%;
 }
+
+@font-face {
+  font-family: "DIN Alternate Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DIN Alternate Bold"), url("DINAlternate-Bold.woff") format("woff");
+}
+
+.fontFace {
+  font-family: "DIN Alternate Bold";
+}
+
 .relative {
   position: relative;
   height: 100vh;
@@ -45,4 +57,21 @@ video {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.animateOpacityReverse {
+  animation-duration: 2s;
+  animation-name: animate-fade-out;
+  animation-delay: 8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

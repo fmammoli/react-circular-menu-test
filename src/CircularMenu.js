@@ -28,7 +28,7 @@ function SubSubMenuItem({
         style={
           rootIsActive
             ? {
-                transform: `translateX(${firstPosition.move}px) `,
+                transform: `translate3d(${firstPosition.move}px,0,0) `,
               }
             : null
         }
@@ -48,7 +48,7 @@ function SubSubMenuItem({
             style={
               middleIsActive
                 ? {
-                    transform: `translateX(${secondPosition.move}px)`,
+                    transform: `translate3d(${secondPosition.move}px,0,0)`,
                   }
                 : null
             }
@@ -68,7 +68,7 @@ function SubSubMenuItem({
                 className="center-grid ball tiny-ball circular-item sub-menu-item"
                 style={
                   parentIsActive
-                    ? { transform: `translate(${move}px,0px)` }
+                    ? { transform: `translate3d(${move}px,0,0)` }
                     : null
                 }
                 onMouseEnter={handleClick}
@@ -156,7 +156,7 @@ function SubMenuItem({
         style={
           rootIsActive
             ? {
-                transform: `translateX(${position.move}px) `,
+                transform: `translate3d(${position.move}px,0,0) `,
               }
             : null
         }
@@ -171,7 +171,9 @@ function SubMenuItem({
             id={`item-${id}`}
             className="center-grid ball smaller-ball circular-item sub-menu-item"
             style={
-              parentIsActive ? { transform: `translate(${move}px,0px)` } : null
+              parentIsActive
+                ? { transform: `translate3d(${move}px,0,0)` }
+                : null
             }
             onMouseEnter={handleClick}
           >
@@ -284,7 +286,7 @@ function CircularMenuRootItem(props) {
         className="center-grid circular-item"
       >
         <div className="ball-root background-container root-item-background">
-          <p className="menu-item-label">{props.title}</p>
+          <p className="menu-item-label--root">{props.title}</p>
         </div>
       </div>
     </div>

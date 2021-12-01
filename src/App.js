@@ -534,7 +534,7 @@ function App() {
       composite: "destination-out",
       cover: {
         color: {
-          value: "#fff",
+          value: "#ffffff",
         },
         opacity: 1,
       },
@@ -735,7 +735,7 @@ function App() {
         },
       },
       color: {
-        value: "#f00",
+        value: "#3f3f3f",
         animation: {
           h: {
             count: 0,
@@ -984,13 +984,20 @@ function App() {
   };
 
   return (
-    <div>
-      <video src={vid} autoPlay playsInline loop muted id="bgvid"></video>
-      {/* <Particles
-          id="tsparticles"
-          container={containerRef}
-          options={options}
-        ></Particles> */}
+    <div class="fontFace">
+      <video
+        src={vid}
+        autoPlay
+        playsInline
+        muted
+        id="bgvid"
+        className="animateOpacityReverse"
+      ></video>
+      <Particles
+        id="tsparticles"
+        container={containerRef}
+        options={options}
+      ></Particles>
       <Router>
         <Switch>
           <Route exact path="/book"></Route>
