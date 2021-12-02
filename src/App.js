@@ -520,7 +520,7 @@ function App() {
     autoPlay: true,
     background: {
       color: {
-        value: "#ffffff",
+        value: "#2b2b2b",
       },
       image: "",
       position: "",
@@ -566,7 +566,8 @@ function App() {
         },
         onHover: {
           enable: true,
-          mode: ["attract", "connect"],
+          // mode: ["attract", "connect"],
+          mode: ["attract"],
           parallax: {
             enable: false,
             force: 2,
@@ -733,7 +734,7 @@ function App() {
         },
       },
       color: {
-        value: "#3f3f3f",
+        value: "#e7e7e7",
         animation: {
           h: {
             count: 0,

@@ -40,6 +40,7 @@
 }
 
 .title h1 {
+  color: white;
   text-align: center;
   padding: 2rem;
 }
@@ -95,6 +96,7 @@
   color: black;
   font-weight: bold;
   transition: 0.7s ease-out;
+  color: white;
 }
 
 .menu-item-label--root {

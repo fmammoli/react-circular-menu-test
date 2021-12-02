@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import vid from "./homebranco.mp4";
+import poster from "./cogu.jpg";
 
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
@@ -55,6 +56,7 @@ const AutoplayVideo = () => {
     playsinline
     preload="metadata"
     id="bgvid"
+    poster="${poster}"
     class="animateOpacityReverse"
     src="${vid}" 
     type="video/mp4"
