@@ -32,15 +32,16 @@
 }
 
 .viewport-header {
-  position: relative;
+  /* position: relative; */
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .title h1 {
-  color: white;
+  color: #5a3000;
   text-align: center;
   padding: 2rem;
 }
@@ -87,26 +88,31 @@
   grid-area: 1 / 1 / 2 / 2;
   list-style: none;
   text-align: center;
+  will-change: transform;
 }
 
 .menu-item-label {
   display: flex;
   align-self: center;
   justify-self: center;
-  color: black;
   font-weight: bold;
   transition: 0.7s ease-out;
-  color: white;
+  color: #5a3000;
+  will-change: transform;
+}
+
+.menu-item-label a {
+  color: #5a3000;
 }
 
 .menu-item-label--root {
   display: flex;
   align-self: center;
   justify-self: center;
-  color: black;
+  color: #5a3000;
   font-weight: bold;
   transition: 0.7s ease-out;
-  transform: translate3d(0, 100px, 0);
+  transform: translate3d(0, -120px, 0);
 }
 
 .sub-menu-item-label {
@@ -133,10 +139,11 @@
   grid-area: 1 / 1 / 2 / 2;
   width: var(--ball-size);
   height: 2px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   transition: var(--move-animation-duration) ease;
   transform-origin: left;
   z-index: 0;
+  will-change: transform;
 }
 .smaller-line {
   width: var(--bal-smaller-size);
@@ -185,7 +192,8 @@
 }
 .root-item-background {
   background-color: cornflowerblue;
-  background-image: url(PikPng.com_real-fish-png_2506996.png);
+  background-image: url(bordado_duplo-ceu.png);
+  background-position: center center;
 }
 .sub-item-background {
   background-color: aquamarine;
@@ -196,10 +204,18 @@
 #item-one-one {
   background-color: lightseagreen;
 }
-
-#item-three,
 #item-one {
-  background-image: url(PikPng.com_real-fish-png_2506996.png);
+  background-image: url(canibalismo.jpeg);
+  background-size: cover;
+}
+
+#item-three {
+  background-image: url(linhas_e_nos.jpeg);
+  background-size: cover;
+}
+
+#item-four {
+  background-image: url(cafe_com_fungo.jpeg);
   background-size: cover;
 }
 
@@ -226,6 +242,6 @@
   align-items: center;
   width: 100vw;
   position: fixed;
-  bottom: 0;
+  bottom: 2rem;
   padding-bottom: 1.2rem;
 }

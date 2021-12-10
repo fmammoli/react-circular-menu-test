@@ -25,14 +25,14 @@ function CustomMenu() {
       items: [
         {
           id: "one",
-          title: "Micróbio-antropologia",
-          rotation: 270 - 45,
-          move: defaultMove,
+          title: "MICRÓBIO-ANTROPOLOGIA",
+          rotation: 200,
+          move: defaultMove + 150,
           hasSubItems: true,
           rootIsActive: false, //To set as the state of the Root Item
           setActive: false, //A setter to its own state
           isActive: false, //Its own state
-          link: "/book",
+          link: "https://fmammoli.github.io/vue-flipview/#1",
           items: [
             {
               id: "one-one",
@@ -106,14 +106,14 @@ function CustomMenu() {
         // },
         {
           id: "three",
-          title: "Manifesto Terrano",
-          rotation: 360 - 45,
-          move: defaultMove,
+          title: "MANIFESTO TERRANO",
+          rotation: 360 - 30,
+          move: defaultMove + 100,
           hasSubItems: true,
           rootIsActive: false,
           setActive: false,
           isActive: false,
-          link: "/textpage",
+          link: null,
           items: [
             {
               id: "three-one",
@@ -182,8 +182,8 @@ function CustomMenu() {
         },
         {
           id: "four",
-          title: "Histórias do Tempo e da Terra",
-          rotation: 90,
+          title: "DO TEMPO E DA TERRA",
+          rotation: 110,
           move: defaultMove,
           hasSubItems: true,
           rootIsActive: false,
@@ -417,14 +417,14 @@ function CustomMenu() {
 
   return (
     <>
-      <header className="viewport-header title">
-        <h1>Fabulações Miceliais</h1>
+      <header className="viewport-header title animateOpacity">
+        <h1>FABULAÇÕES MICELIAIS</h1>
       </header>
       <div className="viewport-menu animateOpacity">
         <CircularMenu
           setRootItem={handleRootClick}
           menuData={menu}
-          rootTitle={"A Bolsa e a Vida"}
+          rootTitle={"A BOLSA E A VIDA"}
         >
           {flatMenus.thirdMenu.map((item) => (
             <SubSubMenuItem
@@ -486,18 +486,14 @@ function CustomMenu() {
               openedSecondMenus={openedSecondMenus}
               ballSize={ballSize}
             >
-              {item.link ? (
-                <Link to={item.link}>{item.title}</Link>
-              ) : (
-                item.title
-              )}
+              {item.link ? <a href={item.link}>{item.title}</a> : item.title}
             </CircularMenuItem>
           ))}
         </CircularMenu>
 
         <div class="footer">
           <div>
-            <a href="">Como ler essa doidera?</a>
+            <a href="">Como ler essa tese?</a>
           </div>
           <div>
             <a href="">Agradecimentos</a>

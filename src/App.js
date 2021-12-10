@@ -519,9 +519,9 @@ function App() {
   const options = {
     autoPlay: true,
     background: {
-      color: {
-        value: "#2b2b2b",
-      },
+      // color: {
+      //   value: "#dfdfdf",
+      // },
       image: "",
       position: "",
       repeat: "",
@@ -538,10 +538,10 @@ function App() {
       },
       enable: false,
     },
-    fullScreen: {
-      enable: true,
-      zIndex: -1,
-    },
+    // fullScreen: {
+    //   enable: true,
+    //   zIndex: -1,
+    // },
     detectRetina: true,
     fpsLimit: 60,
     infection: {
@@ -734,30 +734,31 @@ function App() {
         },
       },
       color: {
-        value: "#e7e7e7",
-        animation: {
-          h: {
-            count: 0,
-            enable: true,
-            offset: 0,
-            speed: 50,
-            sync: false,
-          },
-          s: {
-            count: 0,
-            enable: false,
-            offset: 0,
-            speed: 1,
-            sync: true,
-          },
-          l: {
-            count: 0,
-            enable: false,
-            offset: 0,
-            speed: 1,
-            sync: true,
-          },
-        },
+        value: "#311a00",
+        // animation: {
+        //   h: {
+        //     count: 0,
+        //     enable: true,
+        //     offset: 0,
+        //     // speed: 50,
+        //     speed: 0,
+        //     sync: false,
+        //   },
+        //   s: {
+        //     count: 0,
+        //     enable: false,
+        //     offset: 0,
+        //     speed: 1,
+        //     sync: true,
+        //   },
+        //   l: {
+        //     count: 0,
+        //     enable: false,
+        //     offset: 0,
+        //     speed: 1,
+        //     sync: true,
+        //   },
+        // },
       },
       destroy: {
         mode: "none",

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import vid from "./homebranco.mp4";
-import poster from "./cogu.jpg";
+import poster from "./homebranco_first_frame.png";
 
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();

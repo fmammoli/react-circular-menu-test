@@ -259,7 +259,7 @@ function CircularMenuItem({
             className="menu-item-label"
             style={
               rootIsActive
-                ? { transform: `translate3d(0,${ballSize / 2}px,0)` }
+                ? { transform: `translate3d(0,${ballSize / 1.55}px,0)` }
                 : null
             }
           >
@@ -270,7 +270,7 @@ function CircularMenuItem({
       <div className="center-grid">
         <div
           className="line"
-          style={rootIsActive ? { transform: `scaleX(${move / 100})` } : null}
+          style={rootIsActive ? { transform: `scaleX(${move / 110})` } : null}
         ></div>
       </div>
     </div>

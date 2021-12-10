@@ -17,6 +17,14 @@ body {
   font-weight: normal;
   src: local("DIN Alternate Bold"), url("DINAlternate-Bold.woff") format("woff");
 }
+/* 
+@font-face {
+  font-family: "Impact Label Revesed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Impact Label Revered"),
+    url("Impact\ Label\ Reversed.ttf") format("ttf");
+} */
 
 .fontFace {
   font-family: "DIN Alternate Bold";
@@ -36,10 +44,11 @@ body {
 }
 
 #tsparticles {
-  background-repeat: no-repeat;
+  background-image: url(./algodao_cru.jpeg);
   background-size: cover;
-  background-position: 50% 50%;
-  /* animation: fadeIn 5s; */
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 @keyframes fadeIn {
@@ -74,4 +83,7 @@ video {
   100% {
     opacity: 0;
   }
+}
+div.menu {
+  transform: translate3d(0, -1rem, 0);
 }
