@@ -1,0 +1,32 @@
+{
+  "title": "A bolsa e a Vida",
+  "elements": [
+    { "contentType": "h2", "content": "No meio do caminho tinha uma bolsa" },
+    {
+      "contentType": "text",
+      "content": "O escritor mineiro Carlos Drummond de Andrade é menos lembrado por suas crônicas leves que pela poesia ora visceral ora contemplativa que marcou o imaginário popular brasileiro. Versos que insistem em vencer o esquecimento. É como me lembro das aulas de literatura da escola e da antologia poética que era para o vestibular, mas me fez apaixonado aos dezessete. As crônicas conheci mais tarde, apaixonando-me pela segunda vez. O Drummond cronista explora a potência do caminho com tal vigor que crônica e poesia trocam visitas íntimas... e uma pedra no meio do caminho já não é uma pedra qualquer. Alquimista forjado no pó de minério de ferro das entranhas de Minas Gerais, foi capaz de produzir uma poção impossível de cotidiano e erudito. Fez, à sua maneira, o contador de causos do interior mineiro falar tão bonito que o Brasil inteiro parou para ouvir. Drummond foi mestre em escrever poesias que saíam da pena do narrador do cotidiano, caro às crônicas, dando a elas uma potência que talvez não tivessem na forma de prosa. Foi também, de uma vez só, mestre em dar a força filosófica e contemplativa da poesia às cenas proseadas de uma cidadezinha qualquer. Devagar, como as janelas olham. "
+    },
+    {
+      "contentType": "text",
+      "content": "Como poeta e como cronista, Carlos Drummond de Andrade deu ritmo etnográfico à escrita e potencializou o que há de mais singular na crônica brasileira: a habilidade de escrever o que se aprendeu no caminho, quando escrever nada mais é que pensar com textura. E num dia qualquer, quando eu alçava voos interplanetários nos idos de ficção científica de Ursula K. Le Guin, retomei um livro de crônicas que esteve na minha estante desde o primeiro ano de doutorado. \"A bolsa e a vida\" é uma coletânea de crônicas lançada no ano do aniversário de 60 anos de Drummond, 1962 (Drummond de Andrade, [1962] 2012) . Le Guin foi quem fez o convite não declarado para interpelar as bolsas com mais cuidado. Acabei por revisitar um velho conhecido. A crônica que abre o livro tem por título \"A bolsa\" e explica parcialmente o nome do livro. Quis seu autor que a abertura do livro castigasse leitoras e leitores com o mesmo mal que sofria o narrador da crônica. \"Era isso mesmo: o destino me dava as coisas pela metade\" (p. 12). Mostrando do que se tratava a bolsa, Drummond deixou para quem leu a tarefa ingrata de descobrir o que seja a vida. Uma das perguntas que orienta essa tese."
+    },
+    {
+      "contentType": "img",
+      "content": "./bordado_duplo-ceu.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    {
+      "contentType": "quote",
+      "content": "\"\nPorque ruas tão largas?\n Porque ruas tão retas?\n Meu passo torto\n foi regulado pelos becos tortos\n      de onde venho.\nNão sei andar na vastidão simétrica implacável. (...)\nTrecho de Ruas, Carlos Drummond de Andrade ([1979] 2018)"
+    }
+  ],
+  "references": [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  ]
+}

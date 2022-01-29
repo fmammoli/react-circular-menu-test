@@ -1,0 +1,111 @@
+body {
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+}
+.header {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(151, 151, 151, 0.5) 0%,
+      rgba(151, 151, 151, 0.5) 100%
+    ),
+    url(./linhas_e_nos.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .text__page__title {
+  font-size: 4rem;
+  font-weight: 200;
+  color: white;
+  text-decoration: underline;
+  padding: 4em 1em 0.5em 1em;
+  text-transform: uppercase;
+}
+.nav {
+  text-align: start;
+  padding: 1rem;
+}
+.nav a {
+  color: white;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  padding-inline: 2rem;
+}
+
+.container h2 {
+  margin-block: 1rem;
+}
+.container p {
+  /* According to tailwind its the best max witdth for text */
+  /* max-width: 65ch; */
+  max-width: 700px;
+  text-indent: 4ch;
+
+  margin-bottom: 1em;
+}
+.container p:first-child {
+  margin-top: 0px;
+}
+.img__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.bounded__img img {
+  max-width: 500px;
+}
+.full__img {
+  width: 100vw;
+}
+.full__img img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+}
+.img__container .img__description {
+  align-self: center;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: 200;
+  max-width: 400px;
+}
+.reference__list {
+  max-width: 700px;
+}
+.icon__container {
+  position: relative;
+  margin: 0 10%;
+}
+.icon__container.start {
+  align-self: flex-start;
+}
+.icon__container.end {
+  align-self: flex-end;
+}
+.icon__container.center {
+  align-self: center;
+}
+.parallax__icon {
+  position: absolute;
+  background-image: url(./cogu.jpg);
+  background-size: 600%;
+  background-position: center center;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  left: -2rem;
+}
+.icon__drummond {
+  background-image: url(./drummond.png);
+  background-size: 100%;
+}

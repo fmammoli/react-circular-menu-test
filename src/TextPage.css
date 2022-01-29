@@ -1,10 +1,121 @@
-.fixed-background {
-  background-image: url(./pexels-gustavo-cruz-1592119.jpg);
-  height: 100v;
+:root {
+  --perspective-value: 300;
+  --perspective: 300px;
+
+  --base-layer-z-value: -300;
+  --base-layer-z: -300px;
+
+  --top-layer-z-value: 210;
+  --top-layer-z: 210px;
+
+  /* 1 + ((var(--base-layer-z-value) * -1) / var(--perspective-value)) */
+  --base-scale: calc(
+    1 + ((var(--base-layer-z-value) * -1) / var(--perspective-value))
+  );
+  --top-scale: calc(
+    1 + ((var(--top-layer-z-value) * -1) / var(--perspective-value))
+  );
 }
-.scrollable-container {
-  overflow: scroll;
+.parallax__wrapper {
+  /* font-size: 4rem; */
+  color: black;
 }
-p {
-  color: white;
+
+.parallax__wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: var(--perspective);
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.intro__screen {
+  height: 100vh;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outro__screen {
+  height: 100vh;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax__layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.base__layer {
+  /* scale calculation: 1 + ((Z transform value * -1) / perspective) */
+  /* 1 + (((var--base-layer-z)*-1)/ var(--perspective)) */
+
+  /* (1 + ((var(--base-layer-z) * -1) / var(--perspective))) */
+
+  transform: translateZ(var(--base-layer-z)) scale(var(--base-scale));
+}
+
+.mid__layer {
+  transform: translateZ(0);
+}
+
+.top__layer {
+  transform: translateZ(var(--top-layer-z)) scale(var(--top-scale));
+}
+#intro {
+  z-index: 0;
+}
+
+#group-1 {
+  z-index: -1;
+}
+
+#group-1 > .base__layer {
+  background-color: crimson;
+}
+
+#group-2 {
+}
+
+#group-2 > .mid__layer {
+  background-color: yellowgreen;
+}
+
+#outro {
+}
+.content__group {
+  z-index: 1000;
+}
+.content__layer {
+  display: block;
+}
+.group__1 {
+  z-index: 1;
+}
+.group__1 {
+  z-index: 1;
+}
+.base__1 {
+  /* background-color: teal; */
+}
+
+.base__2 {
+  /* background-color: tomato; */
+}
+.cogu__icon {
+  width: 100px;
+  aspect-ratio: 1;
+  background: url(./cogu.jpg) center center;
 }
