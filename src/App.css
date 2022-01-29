@@ -15,7 +15,7 @@ body {
   font-family: "DIN Alternate Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("DIN Alternate Bold"), url("DINAlternate-Bold.woff") format("woff");
+  src: local("DIN Alternate Bold"), url(./DINAlternate-Bold.woff) format("woff");
 }
 /* 
 @font-face {

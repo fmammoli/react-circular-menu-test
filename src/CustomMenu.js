@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./App.css";
 
 import {
@@ -113,7 +113,7 @@ function CustomMenu() {
           rootIsActive: false,
           setActive: false,
           isActive: false,
-          link: null,
+          link: "/textpage",
           items: [
             {
               id: "three-one",
@@ -491,7 +491,7 @@ function CustomMenu() {
           ))}
         </CircularMenu>
 
-        <div class="footer">
+        <div className="footer">
           <div>
             <a href="">Como ler essa tese?</a>
           </div>
