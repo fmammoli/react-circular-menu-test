@@ -15,7 +15,7 @@ function App() {
       <ParallaxProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/*" element={<Home />}></Route>
             <Route path="/book"></Route>
             <Route path="/flipbook"></Route>
             <Route path="/textpage" element={<FancyTextPage />}></Route>
