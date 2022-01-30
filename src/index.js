@@ -13,7 +13,7 @@ const basename = "/react-circular-menu-test";
 ReactDOM.render(
   <React.StrictMode>
     <ParallaxProvider>
-      <BrowserRouter basename={basename}>
+      <BrowserRouter>
         <App />
       </BrowserRouter>
 
