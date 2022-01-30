@@ -50,13 +50,15 @@ img {
 .container p {
   /* According to tailwind its the best max witdth for text */
   /* max-width: 65ch; */
-  max-width: 900px;
+  max-width: 800px;
   text-indent: 4ch;
 
   margin-bottom: 1em;
 
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.6em;
+
+  text-align: justify;
 }
 .container p:first-child {
   margin-top: 0px;
