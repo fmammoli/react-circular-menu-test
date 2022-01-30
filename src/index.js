@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 
-const basename = "/react-circular-menu-test";
+// const basename = "/react-circular-menu-test";
 
 ReactDOM.render(
   <React.StrictMode>
