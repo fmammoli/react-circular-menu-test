@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useParallax, Parallax } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 
 import bordadoImg from "./bordado_duplo-ceu.png";
 
@@ -72,7 +72,7 @@ function FancyTextPage(props) {
         <h2>Referências Bibliográficas</h2>
         <ul className="reference__list">
           {pageData.references.map((reference, index) => (
-            <li>{reference}</li>
+            <li key={index}>{reference}</li>
           ))}
         </ul>
       </div>

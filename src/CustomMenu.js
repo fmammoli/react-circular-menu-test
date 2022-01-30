@@ -493,10 +493,10 @@ function CustomMenu() {
 
         <div className="footer">
           <div>
-            <a href="">Como ler essa tese?</a>
+            <a href="/">Como ler essa tese?</a>
           </div>
           <div>
-            <a href="">Agradecimentos</a>
+            <a href="/">Agradecimentos</a>
           </div>
         </div>
       </div>

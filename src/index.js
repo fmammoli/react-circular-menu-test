@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 
@@ -13,7 +13,7 @@ const basename = "/react-circular-menu-test";
 ReactDOM.render(
   <React.StrictMode>
     <ParallaxProvider>
-      <BrowserRouter basename="/react-circular-menu-test">
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
 

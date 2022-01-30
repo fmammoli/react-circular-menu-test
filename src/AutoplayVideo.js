@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import vid from "./homebranco.mp4";
 import poster from "./homebranco_first_frame.png";
 
@@ -9,7 +9,7 @@ const isSafari = () => {
 
 const AutoplayVideo = () => {
   const videoParentRef = useRef();
-  const [shouldUseImage, setShouldUseImage] = useState(false);
+  //const [shouldUseImage, setShouldUseImage] = useState(false);
 
   useEffect(() => {
     // check if user agent is safari and we have the ref to the container <div />
@@ -38,7 +38,7 @@ const AutoplayVideo = () => {
               .catch(() => {
                 // if promise fails, hide the video and fallback to <img> tag
                 videoParentRef.current.style.display = "none";
-                setShouldUseImage(true);
+                //setShouldUseImage(true);
               });
           }
         }, 0);
