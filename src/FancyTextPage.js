@@ -15,7 +15,7 @@ function FancyTextPage(props) {
         <nav className="nav">
           <Link to="/">{"<-"}Voltar</Link>
         </nav>
-        <h1 className="text__page__title">{pageData.title}</h1>
+        <h1 className="text__page__title">.</h1>
       </header>
       <div className="container flex-center">
         <div className="icon__container center">
