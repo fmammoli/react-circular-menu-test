@@ -19,12 +19,12 @@ function FancyTextPage(props) {
       </header>
       <div className="container flex-center">
         <div className="icon__container center">
-          <Parallax translateX={["500px", "0px"]}>
+          <Parallax translateX={["600px", "0px"]}>
             <div className="parallax__icon"></div>
           </Parallax>
         </div>
         <div className="icon__container center">
-          <Parallax translateX={["-500px", "0px"]}>
+          <Parallax translateX={["-600px", "0px"]}>
             <div className="parallax__icon"></div>
           </Parallax>
         </div>
