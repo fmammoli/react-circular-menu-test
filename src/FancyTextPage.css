@@ -39,18 +39,24 @@ img {
 
 .container {
   padding-inline: 2rem;
+  padding-top: 1rem;
 }
 
 .container h2 {
-  margin-block: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 .container p {
   /* According to tailwind its the best max witdth for text */
   /* max-width: 65ch; */
-  max-width: 700px;
+  max-width: 900px;
   text-indent: 4ch;
 
   margin-bottom: 1em;
+
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 .container p:first-child {
   margin-top: 0px;
@@ -60,6 +66,7 @@ img {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  margin-block: 2rem;
 }
 .bounded__img img {
   max-width: 500px;
@@ -78,6 +85,8 @@ img {
   font-size: 0.8rem;
   font-weight: 200;
   max-width: 400px;
+  line-height: 1rem;
+  padding-block: 1rem;
 }
 .reference__list {
   max-width: 700px;
