@@ -113,7 +113,7 @@ function CustomMenu() {
           rootIsActive: false,
           setActive: false,
           isActive: false,
-          link: "/textpage",
+          link: "/react-circular-menu-test/textpage",
           items: [
             {
               id: "three-one",
